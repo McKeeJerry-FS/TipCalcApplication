@@ -32,33 +32,70 @@
                     <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link 1</a>
+                    <a class="nav-link" href="#">The Code</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link 2</a>
+                    <a class="nav-link" href="#">About</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link 3</a>
-                </li>
+                
             </ul>
         </div>
     </div>
 </nav>
 
 <main class="flex-shrink-0">
-   <div class="container h-100">
+   <div class="container h-100 minHeight">
        <div class="row row-cols-1 row-cols-md-2 h-100 p-2 m-2">
+           <!--This column will give a quick synopsis of what the application is and what it does-->
            <div class="col-4">
-               <div class="bg-dark text-light h-100">
-                    Column 1
+               <div class="bg-dark text-light h-100 minHeight">
+                    <h1>Tip Calculator</h1>
                </div>
-
-           </div>
+            </div>
+           <!--This column will be where the actual application lives--> 
            <div class="col-8">
-               <div class="bg-secondary text-light h-100">
-                    Column 2
-               </div>
-           </div>
+               <div class="bg-secondary text-light h-100 minHeight">
+                   <div class="appContainer h-70 p-2">
+                        <h2>Tip Calculator</h2>
+                       <div class="wrapper">
+                           
+                           <p>Bill Amount</p>
+                           
+                           <input type="text" id="amount" 
+                           placeholder="Amount to be paid"> $
+                           
+                           
+                           <p>How was the service ?</p>
+                           
+                           <select id="services">
+                               <option selected disabled hidden>
+                                   Select
+                                </option>
+                                <option value="0.25">25% - Top Notch</option>
+                                <option value="0.20">20% - Excellent</option>
+                                <option value="0.15">15% - Good</option>
+                                <option value="0.10">10% - Bad</option>
+                                <option value="0.05">5% - Worst</option>
+                            </select>
+                            
+                            
+                            <p>Total number of persons</p>
+                            
+                            <input type="text" id="persons"
+                            placeholder="Number of people sharing the bill">
+                            <button id="calculate">Calculate</button>
+                        </div>
+                        
+                        <div class="tip">
+                            
+                            <p>Tip Amount</p>
+                            
+                            $<span id="total">0</span>
+                            <span id="each">each</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
        </div>
    </div>
  </main>
