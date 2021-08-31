@@ -8,3 +8,7 @@ This application was created using HTML5, CSS3, JavaScript, and BootStrap 5 on V
 
 * [Jerry McKee Jr's GitHub - Tip Calculator Application](https://github.com/McKeeJerry-FS/TipCalcApplication) 
 * [David Griffin's GitHub - TipCalc](https://github.com/dwg06d/tipCalc)
+
+
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3443fb10-3906-4efa-ba91-87781fb430b6/deploy-status)](https://app.netlify.com/sites/jm-tipcalculator/deploys)
